@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-clima">
+        <div class="contenedor-seleccion">
+            <h3>Seleccione la Ciudad</h3>
+            <select name="SeleccionClima" id="SeleccionClima" onchange="cambiarValor()">
+                <option value="VillaMaria" onchange="cargarClima()">Villa Maria</option>
+                <option value="SantiagodelEstero"onchange="cargarClima()">Santiago del Estero</option>
+                <option value="Ushuaia"onchange="cargarClima()">Ushuaia</option>
+            </select>
+        </div>
+
+        <div class="contenedor-muesta" id="contenedor-muestra">
+            <div class="clima">
+                <h3 >Clima</h3>
+                <div class="imagen" id="imagen"></div>
+                <div class="data">
+                    <div>
+                        <span>Temperatura Actual:</span>
+                        <span id="temperatura"></span>
+                    </div>
+                    <div>
+                        <span>Descripción:</span>
+                        <span id="descripcion"></span>
+                    </div>
+                    <div>
+                        <span>Latitud:</span>
+                        <span id="latitud"></span>
+                    </div>
+                    <div>
+                        <span>Longitud:</span>
+                        <span id="longitud"></span>
+                    </div>
+                    <div>
+                        <span>Sensación:</span>
+                        <span id="sensacion"></span>
+                    </div>
+                    <div>
+                        <span>Velocidad del Viento:</span>
+                        <span id="velocidadviento"></span>
+                    </div>
+                    <div>
+                        <span>Humedad:</span>
+                        <span id="humedad"></span>
+                    </div>
+                    <div>
+                        <span>Dirección del Viento:</span>
+                        <span id="direccionviento"></span>
+                    </div>
+                </div>
+    
+                <div style="width: 200px;" class="" id="data"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+</body>
+</html>
